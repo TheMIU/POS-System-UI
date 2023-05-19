@@ -64,22 +64,3 @@ input {
 label {
     font-size: 15px;
 }
-
-/*
-
-
-label {
-    display: block;
-    font-weight: bold;
-}
-
-
-
-button {
-    background-color: #000;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-*/

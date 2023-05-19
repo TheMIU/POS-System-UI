@@ -15,15 +15,15 @@
     ============================================= -->
     <title>Home | SUN POS System</title>
 
-     <!-- Favicon
-    ============================================= -->
+    <!-- Favicon
+   ============================================= -->
     <link href="assets/images/img_1.png" rel="icon">
 
     <!-- Stylesheets
    ============================================= -->
     <link href="assets/css/normalize.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <link href="assets/css/login-styles.css" rel="stylesheet">
+    <link href="assets/css/common-styles.css" rel="stylesheet">
+    <link href="assets/css/home-styles.css" rel="stylesheet">
 
     <!-- boostrap
    ============================================= -->
@@ -46,7 +46,39 @@
 <body>
 <section>
     <div></div>
+    <nav class="navbar navbar-expand-lg " style="background-color: #3B8AD3;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/img_1.png " width="25%"></a>
+            <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Place Order</a>
+                    </li>
+                </ul>
 
+                
+                <a> Logout<i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> </a>
+
+            </div>
+        </div>
+    </nav>
 </section>
 </body>
 </html>
