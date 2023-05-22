@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <!-- Meta tags
@@ -43,7 +43,7 @@
 </head>
 
 <body>
-<section style="height: 100vh">
+<section >
     <div class="position-absolute bottom-0" style="width: 100% ; height: 30vh ; background-color: #3B8AD3"></div>
 
     <!--nav bar-->
@@ -61,7 +61,8 @@
                         <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link  active text-dark" href="manage_customer.html">Customer</a>
+                        <a aria-current="page" class="nav-link  active text-dark"
+                           href="manage_customer.html">Customer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="manage_store.html">Store</a>
@@ -85,8 +86,92 @@
     </nav>
 
     <!--main content-->
-    <section class="container-fluid position-absolute top-50 start-50 translate-middle mt-4 bg-body ">
+    <section class="container-fluid position-absolute top-50 start-50 translate-middle mt-4 bg-body row ">
+        <section class="col-lg-8 col-12">
+            <!--search Bar-->
+            <div class="input-group row mt-2 mb-1">
+                <div class="col-11">
+                    <input class="form-control" type="search">
+                </div>
+                <button class="btn btn-primary col-1" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!--table-->
+            <div class="table-responsive ">
+                <table class="table table-hover">
+                    <thead class="table-info">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                    <tr>
+                        <td>c001</td>
+                        <td>Mark</td>
+                        <td>Galle</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>c002</td>
+                        <td>Mark</td>
+                        <td>Galle</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>c003</td>
+                        <td>Mark</td>
+                        <td>Galle</td>
+                        <td>5000</td>
+                    </tr>
 
+                    <tr>
+                        <td>c003</td>
+                        <td>Mark</td>
+                        <td>Galle</td>
+                        <td>5000</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!--///////////////////////////////////-->
+        <section class="col-lg-4 col-12">
+            <div class="text-center mt-2 p-1" style="background-color: #0d6efd ; color:white;">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                Manage Customer
+            </div>
+            <div>
+                <div class="mt-2">
+                    <button class="btn btn-primary" type="button">Edit</button>
+                    <button class="btn btn-primary" type="button">New</button>
+                </div>
+                <div class="row mt-2 ">
+                    <label class="col-4 mt-2">ID</label>
+                    <input class="col-8 mt-2">
+
+                    <label class="col-4 mt-2">Name</label>
+                    <input class="col-8 mt-2">
+
+                    <label class="col-4 mt-2">Address</label>
+                    <input class="col-8 mt-2">
+
+                    <label class="col-4 mt-2">Salary</label>
+                    <input class="col-8 mt-2">
+                </div>
+                <div class="mt-2 text-end" style="width: 100%">
+                    <button class="btn btn-danger" type="button">Delete</button>
+                    <button class="btn btn-primary" type="button">Cancel</button>
+                    <button class="btn btn-success" type="button">Save</button>
+                </div>
+            </div>
+        </section>
     </section>
 </section>
 
