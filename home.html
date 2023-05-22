@@ -40,15 +40,16 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-
 </head>
 
 <body>
-<section>
-    <div></div>
-    <nav class="navbar navbar-expand-lg " style="background-color: #3B8AD3;">
+<section style="height: 100vh">
+    <div class="position-absolute bottom-0" style="width: 100% ; height: 30vh ; background-color: #3B8AD3"></div>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg z-1" style="background-color: #3B8AD3;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="assets/images/img_1.png " width="25%"></a>
+            <img src="assets/images/img_1.png " width="3%">
             <button aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler"
                     data-bs-target="#navbarText" data-bs-toggle="collapse" type="button">
@@ -57,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                        <a aria-current="page" class="nav-link active text-dark" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Customer</a>
@@ -73,12 +74,40 @@
                     </li>
                 </ul>
 
-                
-                <a> Logout<i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i> </a>
+
+                <a href="index.html" style="user-select: none; text-decoration: none "> Logout &nbsp;<i
+                        class="fa-solid fa-right-from-bracket"
+                        style="color: #ffffff;"></i>
+                </a>
 
             </div>
         </div>
     </nav>
+
+    <!--main content-->
+    <section class="container-fluid position-absolute top-50 start-50 translate-middle mt-4 bg-body ">
+        <section class="row w-75 h-25 position-absolute top-50 start-50 translate-middle"
+                 style="column-gap: 1%; row-gap: 1%">
+            <button class="col btn text-light " onclick="window.location.href='home.html'"
+                    style="background-color: #3B8AD3;"><i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                <br> Manage <br> Customer
+            </button>
+            <button class="col btn text-light " onclick="window.location.href='home.html'"
+                    style="background-color: #3B8AD3;"><i class="fa-solid fa-store" style="color: #ffffff;"></i>
+                <br> Manage <br> Store
+            </button>
+            <button class="col btn text-light " onclick="window.location.href='home.html'"
+                    style="background-color: #3B8AD3;">
+                <i class="fa-solid fa-border-all" style="color: #ffffff;"></i> <br>
+                Manage <br> Orders
+            </button>
+            <button class="col btn text-light bg-dark  " onclick="window.location.href='home.html'"
+                    style="background-color: #3B8AD3;"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <br>Place Order
+            </button>
+        </section>
+    </section>
 </section>
+
 </body>
 </html>
