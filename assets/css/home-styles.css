@@ -11,3 +11,7 @@ body > section:nth-child(1)>section{
     width: 95vw;
     height: 85vh;
 }
+
+section section i{
+    font-size: 150%;
+}
