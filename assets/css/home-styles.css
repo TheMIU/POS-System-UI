@@ -12,6 +12,6 @@ body > section:nth-child(1)>section{
     height: 85vh;
 }
 
-section section>button>i{
+main section>button>i{
     font-size: 150%;
 }

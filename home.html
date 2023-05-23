@@ -39,13 +39,11 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
 </head>
 
-<body>
-<section style="height: 100vh">
-    <div class="position-absolute bottom-0" style="width: 100% ; height: 30vh ; background-color: #3B8AD3"></div>
+<body style="background-color: #1a1d20">
 
+<header>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg z-1" style="background-color: #3B8AD3;">
         <div class="container-fluid">
@@ -83,31 +81,34 @@
             </div>
         </div>
     </nav>
+</header>
 
-    <!--main content-->
-    <section class="container-fluid position-absolute top-50 start-50 translate-middle mt-4 bg-body">
-        <section class="row w-75 h-25 position-absolute top-50 start-50 translate-middle"
-                 style="column-gap: 1%; row-gap: 5%">
-            <button class="col btn text-light " onclick="window.location.href='manage_customer.html'"
-                    style="background-color: #3B8AD3;"><i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                <br> Manage <br> Customer
-            </button>
-            <button class="col btn text-light " onclick="window.location.href='manage_store.html'"
-                    style="background-color: #3B8AD3;"><i class="fa-solid fa-store" style="color: #ffffff;"></i>
-                <br> Manage <br> Store
-            </button>
-            <button class="col btn text-light " onclick="window.location.href='manage_orders.html'"
-                    style="background-color: #3B8AD3;">
-                <i class="fa-solid fa-border-all" style="color: #ffffff;"></i> <br>
-                Manage <br> Orders
-            </button>
-            <button class="col btn text-light bg-dark  " onclick="window.location.href='place_order.html'"
-                    style="background-color: #3B8AD3;"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                <br>Place Order
-            </button>
-        </section>
+<div class="row "
+     style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ; margin: auto; z-index: -100;">
+    <div class="col-12 " style="height: 85%; background-color: rgb(26,29,32)"></div>
+    <div class="col-12 " style="height: 15%; background-color: #3B8AD3"></div>
+</div>
+
+<main>
+    <section class="row z-0 w-75 h-25 position-absolute top-50 start-50 translate-middle"
+             style="column-gap: 1%; row-gap: 5%">
+        <button class="col btn btn-primary text-light " onclick="window.location.href='manage_customer.html'">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            <br> Manage <br> Customer
+        </button>
+        <button class="col btn btn-primary text-light " onclick="window.location.href='manage_store.html'">
+            <i class="fa-solid fa-store" style="color: #ffffff;"></i>
+            <br> Manage <br> Store
+        </button>
+        <button class="col btn btn-primary text-light " onclick="window.location.href='manage_orders.html'">
+            <i class="fa-solid fa-border-all" style="color: #ffffff;"></i> <br>
+            Manage <br> Orders
+        </button>
+        <button class="col btn btn-primary text-light " onclick="window.location.href='place_order.html'">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <br>Place Order
+        </button>
     </section>
-</section>
-
+</main>
 </body>
 </html>
