@@ -43,9 +43,7 @@
 </head>
 
 <body>
-<section style="height: 100vh">
-    <div class="position-absolute bottom-0" style="width: 100% ; height: 30vh ; background-color: #3B8AD3"></div>
-
+<header>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg z-1" style="background-color: #3B8AD3;">
         <div class="container-fluid">
@@ -70,7 +68,8 @@
                         <a class="nav-link" href="manage_orders.html">Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a aria-current="page" class="nav-link  active text-dark" href="place_order.html">Place Order</a>
+                        <a aria-current="page" class="nav-link  active text-dark" href="place_order.html">Place
+                            Order</a>
                     </li>
                 </ul>
 
@@ -83,12 +82,182 @@
             </div>
         </div>
     </nav>
+</header>
 
+<div class="row "
+     style=" height: 100vh ; width: 100% ; position: absolute; top: 0; bottom: 0; left: 0; right: 0 ;
+      margin: auto; z-index: -100;">
+    <div class="col-12 " style="height: 85%; background-color: rgb(26,29,32)"></div>
+    <div class="col-12 " style="height: 15%; background-color: #3B8AD3"></div>
+</div>
+
+<main class="container-fluid">
     <!--main content-->
-    <section class="container-fluid position-absolute top-50 start-50 translate-middle mt-4 bg-body ">
+    <section>
+        <section class="row p-2" style="height: 100%">
+            <!--///////////////////////////////////-->
+            <div class="col-3 bg-body">
+                <div class="container row text-body-tertiary ">
+                    <label class="col-6">Order ID: </label>
+                    <label class="col-6">O001</label>
+                    <label class="col-6">Date: </label>
+                    <label class="col-6">2022/02/02</label>
+                </div>
 
+                <div class="container text-body-secondary border border-3 p-1">
+                    <div class="text-center  p-1" style="background-color: #0d6efd ; color:white;">
+                        Customer Details
+                    </div>
+
+                    <label class="col-4 mt-2">ID</label>
+                    <input class="col-7 mt-2">
+
+                    <label class="col-4 mt-2">Name</label>
+                    <input class="col-7 mt-2">
+
+                    <label class="col-4 mt-2">Address</label>
+                    <input class="col-7 mt-2">
+
+                </div>
+            </div>
+            <!--///////////////////////////////////-->
+            <div class="col-9 bg-body">
+                <div class="container text-body-secondary border border-3 p-1">
+                    <div class="text-center  p-1" style="background-color: #0d6efd ; color:white;">
+                        Item Details
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="col-4 mt-2">Code</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Name</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Qty On H.</label>
+                            <input class="col-7 mt-2">
+                        </div>
+
+                        <div class="col-6">
+                            <label class="col-4 mt-2">Price</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Order Qty</label>
+                            <input class="col-7 mt-2">
+
+                            <label class="col-4 mt-2">Total</label>
+                            <input class="col-7 mt-2">
+                        </div>
+                    </div>
+
+
+                    <div class="text-end mt-3">
+                        <button class="btn btn-danger"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+                        </button>
+                        <button class="btn btn-primary"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> &nbsp;
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--///////////////////////////////////-->
+            <div class="col-12 bg-body ">
+                <div class="table-responsive mt-2">
+                    <table class="table table-hover">
+                        <thead class="table-info">
+                        <tr>
+                            <th scope="col">Item Code</th>
+                            <th scope="col">Item Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                        <tr>
+                            <td>P002</td>
+                            <td>Keerisamba 5kg</td>
+                            <td>525.00</td>
+                            <td>2</td>
+                            <td>1050.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--///////////////////////////////////-->
+            <div class="col-12 bg-body border border-3 ">
+                <div class="row text-end">
+                    <div class="col-12 d-flex justify-content-end">
+                        <div class="row w-25 ">
+                            <label class="col-4 mt-2">Total</label>
+                            <input class="col-7 mt-2">
+                        </div>
+                    </div>
+                    <div class="col-12  d-flex justify-content-end">
+                        <div class="row w-25 ">
+                            <label class="col-4 mt-2">Discount</label>
+                            <input class="col-7 mt-2">
+                        </div>
+
+                        <div class="row w-25 ">
+                            <label class="col-4 mt-2">Cash</label>
+                            <input class="col-7 mt-2">
+                        </div>
+
+                        <div class="row w-25 ">
+                            <label class="col-4 mt-2">Grand Total</label>
+                            <input class="col-7 mt-2">
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="btn btn-success m-3">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                            Place Order
+                        </button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <!--///////////////////////////////////-->
+            <!-- <section class="col-lg-4 col-12 vh-75 bg-body">
+                 <div class="text-center mt-2 p-1" style="background-color: #0d6efd ; color:white;">
+                     <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                     Place Order
+                 </div>
+                 <div>
+                     <div class="mt-2">
+                         <button class="btn btn-primary" type="button">Edit</button>
+                         <button class="btn btn-primary" type="button">New</button>
+                     </div>
+                     <div class="row mt-2 ">
+                         <label class="col-4 mt-2">ID</label>
+                         <input class="col-7 mt-2">
+
+                         <label class="col-4 mt-2">Name</label>
+                         <input class="col-7 mt-2">
+
+                         <label class="col-4 mt-2">Address</label>
+                         <input class="col-7 mt-2">
+
+                         <label class="col-4 mt-2">Salary</label>
+                         <input class="col-7 mt-2">
+                     </div>
+                     <div class="mt-2 text-end" style="width: 100%">
+                         <button class="btn btn-danger" type="button">Delete</button>
+                         <button class="btn btn-primary" type="button">Cancel</button>
+                         <button class="btn btn-success" type="button">Save</button>
+                     </div>
+                 </div>
+             </section>-->
+        </section>
     </section>
-</section>
-
+</main>
 </body>
 </html>
